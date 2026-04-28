@@ -1,120 +1,101 @@
-body {
+* {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
     background: #0f172a;
-    color: white;
+    color: #fff;
 }
 
-header {
-    padding: 20px;
-    background: #1e293b;
-    text-align: center;
-}
-
-.filtros {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-input, select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
+/* layout */
 .container {
     display: flex;
-    flex-wrap: wrap; /* Permite que o carrinho desça no celular */
 }
 
-/* Produtos */
-.produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo automático */
-    gap: 20px;
+/* sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1e293b;
     padding: 20px;
-    width: 70%;
-    box-sizing: border-box;
 }
 
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+/* conteúdo */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* header */
+header h1 {
+    margin-bottom: 20px;
+}
+
+/* cards */
 .card {
     background: #1e293b;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    transition: transform 0.2s;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.card:hover {
-    transform: scale(1.02);
+/* inputs */
+.inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
+/* botão */
 button {
-    margin-top: 10px;
-    padding: 12px;
+    padding: 10px;
     background: #22c55e;
     border: none;
-    color: white;
-    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    color: white;
 }
 
-button:hover {
-    background: #16a34a;
+/* lista */
+ul {
+    list-style: none;
 }
 
-/* Carrinho */
-.carrinho {
-    width: 30%;
-    background: #020617;
-    padding: 20px;
-    border-left: 2px solid #22c55e;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-
-.carrinho li {
+li {
+    background: #0f172a;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    background: #1e293b;
-    padding: 8px;
-    border-radius: 5px;
 }
 
-.carrinho li button {
-    width: auto;
+/* botões da lista */
+li button {
+    margin-left: 5px;
+}
+
+li button:first-of-type {
+    background: #facc15;
+    color: black;
+}
+
+li button:last-of-type {
     background: #ef4444;
-    padding: 5px 10px;
-    margin: 0;
-}
-
-/* Responsividade para Celular */
-@media (max-width: 900px) {
-    .produtos {
-        width: 100%;
-    }
-    
-    .carrinho {
-        width: 100%;
-        border-left: none;
-        border-top: 4px solid #22c55e;
-        min-height: auto;
-    }
-
-    .filtros {
-        flex-direction: column;
-    }
 }

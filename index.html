@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Completa - Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Sistema de Estoque</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>🛍️ Loja Tech</h1>
-    <div class="filtros">
-        <input type="text" id="busca" placeholder="Buscar produto..." onkeyup="filtrar()">
-        <select id="categoria" onchange="filtrar()">
-            <option value="">Todas categorias</option>
-            <option value="gamer">Gamer</option>
-            <option value="celular">Celular</option>
-            <option value="pc">PC</option>
-            <option value="tv">TV</option>
-        </select>
-    </div>
-</header>
+<div class="container">
 
-<main class="container">
-    <section class="produtos" id="produtos"></section>
-
-    <aside class="carrinho">
-        <h2>🛒 Carrinho</h2>
-        <ul id="listaCarrinho"></ul>
-
-        <div class="checkout">
-            <p id="total">Total: R$ 0</p>
-            <select id="pagamento">
-                <option value="">Forma de pagamento</option>
-                <option value="dinheiro">Dinheiro</option>
-                <option value="cartao">Cartão</option>
-            </select>
-            <input type="number" id="valorPago" placeholder="Valor pago (Dinheiro)">
-            <button onclick="finalizarCompra()">Finalizar Compra</button>
-            <p id="troco"></p>
-        </div>
+    <aside class="sidebar">
+        <h2>📊 Sistema</h2>
+        <p>Controle de Estoque</p>
     </aside>
-</main>Git Bash
 
+    <main class="content">
+
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <section class="card form">
+            <h2>Adicionar Produto</h2>
+
+            <div class="inputs">
+                <input type="text" id="nome" placeholder="Nome do produto">
+                <input type="number" id="preco" placeholder="Preço">
+                <input type="number" id="quantidade" placeholder="Quantidade">
+            </div>
+
+            <button onclick="adicionarProduto()">Adicionar Produto</button>
+        </section>
+
+        <section class="card lista">
+            <h2>Produtos</h2>
+            <ul id="listaProdutos"></ul>
+        </section>
+
+    </main>
+
+</div>
 
 <script src="script.js"></script>
 </body>

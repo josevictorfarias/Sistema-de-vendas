@@ -1,44 +1,63 @@
-# 🛍️ Loja Online - Portfólio
+# 🛒 Sistema de Vendas
 
-Este projeto é uma **Loja Online** desenvolvida como parte do meu portfólio.  
-O objetivo é simular uma experiência de e-commerce simples, com funcionalidades de carrinho de compras, filtros de produtos e cálculo de pagamento.
-
-## 🚀 Funcionalidades
-- Listagem de produtos com imagens, preços e categorias.
-- Filtro por nome e categoria.
-- Carrinho de compras dinâmico:
-  - Adicionar e remover produtos.
-  - Cálculo automático do total.
-  - Persistência no navegador com **localStorage**.
-- Checkout com opções de pagamento:
-  - Dinheiro (com cálculo de troco).
-  - Cartão.
-- Layout **responsivo**, adaptado para computadores e celulares.
-
-## 🖼️ Tecnologias utilizadas
-- **HTML5** para estrutura.
-- **CSS3** para estilização e responsividade.
-- **JavaScript** para lógica do carrinho e filtros.
-
-## 📱 Responsividade
-O site foi construído para funcionar bem em qualquer dispositivo.  
-No computador, os produtos aparecem em grade com o carrinho ao lado.  
-No celular, os produtos ficam em coluna e o carrinho aparece abaixo.
-
-## 🔗 Link para acessar
-👉 [Acesse a Loja Online aqui](https://josevfarias-collab.github.io/loja-online/)
-
-*(o link acima usa GitHub Pages — basta ativar nas configurações do repositório em “Pages” para publicar seu site)*
-
-## 📷 Demonstração
-Exemplo de como a loja aparece:
-
-- Página inicial com produtos.
-- Carrinho atualizado em tempo real.
-- Checkout com cálculo de troco.
-
-## 📌 Objetivo
-Este projeto foi criado para estudo e prática de desenvolvimento web, servindo como parte do meu portfólio.  
-Ele mostra minhas habilidades em **HTML, CSS e JavaScript**, além de boas práticas de responsividade e organização de código.
+Aplicação web desenvolvida para gerenciamento simples de produtos e controle de estoque. O sistema permite cadastrar, visualizar, vender e remover produtos, simulando o funcionamento básico de um sistema comercial.
 
 ---
+
+## 📌 Funcionalidades
+
+* Cadastro de produtos com nome, preço e quantidade
+* Listagem dinâmica de produtos cadastrados
+* Controle de estoque com atualização automática
+* Simulação de venda (reduz a quantidade do produto)
+* Remoção de produtos da lista
+* Armazenamento local dos dados utilizando o navegador (localStorage)
+
+---
+
+## 💻 Tecnologias utilizadas
+
+* HTML → estrutura da aplicação
+* CSS → estilização e layout do sistema
+* JavaScript → lógica e funcionamento das funcionalidades
+
+---
+
+## ⚙️ Como o sistema funciona
+
+O sistema utiliza JavaScript para manipular os elementos da página em tempo real.
+Quando um produto é cadastrado, ele é armazenado em uma lista e salvo no navegador usando o localStorage.
+
+Sempre que a página é recarregada, os dados são recuperados automaticamente, garantindo que as informações não sejam perdidas.
+
+As ações disponíveis incluem:
+
+* Adicionar novos produtos
+* Atualizar a lista automaticamente
+* Diminuir o estoque ao realizar uma venda
+* Remover produtos do sistema
+
+---
+
+## 🎯 Objetivo do projeto
+
+Este projeto foi desenvolvido com foco no aprendizado prático de desenvolvimento web, abordando conceitos como:
+
+* Manipulação do DOM
+* Estruturação de layout
+* Lógica de programação com JavaScript
+* Persistência de dados no navegador
+
+---
+
+## 🚀 Como executar o projeto
+
+1. Baixar ou clonar o repositório
+2. Abrir a pasta do projeto
+3. Executar o arquivo `index.html` em qualquer navegador
+
+---
+
+## 👨‍💻 Autor
+
+Jose Victor Farias
