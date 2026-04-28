@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Estoque</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>📊 Sistema</h2>
+        <p>Controle de Estoque</p>
+    </aside>
+
+    <main class="content">
+
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+
+        <section class="card form">
+            <h2>Adicionar Produto</h2>
+
+            <div class="inputs">
+                <input type="text" id="nome" placeholder="Nome do produto">
+                <input type="number" id="preco" placeholder="Preço">
+                <input type="number" id="quantidade" placeholder="Quantidade">
+            </div>
+
+            <button onclick="adicionarProduto()">Adicionar Produto</button>
+        </section>
+
+        <section class="card lista">
+            <h2>Produtos</h2>
+            <ul id="listaProdutos"></ul>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
